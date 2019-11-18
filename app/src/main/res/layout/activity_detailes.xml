@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center|top|left"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="barcode" />
+
+    <EditText
+        android:id="@+id/txtbarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1"
+        android:layout_marginLeft="100dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtbarcode"
+        android:layout_centerHorizontal="true"
+        android:text="product_name" />
+
+    <EditText
+        android:id="@+id/txtPname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/p1"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/pr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:text="price" />
+
+    <EditText
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pr1"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPrice"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPrice"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:text="delete text" />
+
+    <TextView
+        android:id="@+id/textV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSave"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="40dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarTrackVertical="@android:drawable/title_bar_tall"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textV2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:gravity="center"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textV2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="false"
+        android:gravity="center"
+        android:text="serch" />
+
+</RelativeLayout>

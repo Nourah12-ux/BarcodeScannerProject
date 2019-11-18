@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendActivity">
+
+    <RelativeLayout
+        android:id="@+id/parent_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/header_s"
+            layout="@layout/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_s"
+            android:layout_centerHorizontal="true"
+            android:text="The Bill"
+            android:textAlignment="center"
+            android:textColor="@color/colorBG"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/textView6"
+            android:layout_below="@id/textView5"
+            android:layout_alignStart="@id/footer_s"
+            android:layout_alignEnd="@id/footer_s"
+            android:layout_centerHorizontal="false"
+            android:fadeScrollbars="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="10dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbarTrackVertical="@android:drawable/title_bar_tall"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Product Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBG"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Number"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBG"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:text="Price"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBG"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="DeleteProduct"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBG"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button4"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="40dp"
+            android:text="Tolat"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button4"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="40dp"
+            android:layout_toEndOf="@id/textView6"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/footer_s"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="30dp"
+            android:text="Sendthe bill" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/footer_s"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="30dp"
+            android:text=" Add product"
+            android:textAlignment="textEnd" />
+
+        <include
+            android:id="@+id/footer_s"
+            layout="@layout/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
